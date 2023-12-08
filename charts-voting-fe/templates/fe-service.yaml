@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.fe.service.name }}
+  # namespace: {{ .Values.namespace }}
+  labels:
+    {{- include "charts-voting-fe.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.fe.service.type }}
+  ports:
+    - port: {{ .Values.fe.service.port }}
+      targetPort: {{ .Values.fe.service.port }}
+      protocol: TCP
+      name: http
+  selector:
+    type: fe-dep
