@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-      name: my-app
+      name: my-app-fe
       namespace: argocd
 spec:
     project: default
@@ -9,9 +9,6 @@ spec:
     - repoURL: https://github.com/Janemils/Helm_Charts.git
       targetRevision: HEAD
       path: charts-voting-fe
-    - repoURL: https://github.com/Janemils/Helm_Charts.git
-      targetRevision: HEAD
-      path: charts-voting-res
 
     destination:
       server: https://kubernetes.default.svc
