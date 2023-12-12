@@ -22,4 +22,14 @@ Steps to use this Helm Charts:
   ![image](https://github.com/Janemils/Helm_Charts/assets/143650941/c7a2afe4-e43c-4b26-9689-531271caf5f6)
   ![image](https://github.com/Janemils/Helm_Charts/assets/143650941/0cd2b913-cd20-4684-86c4-e7f061614b88)
 
+Can also use ArgoCD to deploy the helm charts.
+- Install ArgoCD in your cluster.
+- Apply the application.yaml file [kubectl apply -f application.yaml]
+- Verify in the terminal if all the deployments and services are created successfully.
+- Login to your argocd web ui and verify if all the deployments and services are created successfully.
+
+![image](https://github.com/Janemils/Helm_Charts/assets/143650941/5b133d77-be20-47f8-a484-73616b35313c)
+
+You should be able to observe something similar to this:
+![image](https://github.com/Janemils/Helm_Charts/assets/143650941/9377483e-45ba-4d24-9aa3-eddbce91a6b3)
 
