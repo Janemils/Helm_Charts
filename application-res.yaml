@@ -5,8 +5,8 @@ metadata:
       namespace: argocd
 spec:
     project: default
-    sources:
-    - repoURL: https://github.com/Janemils/Helm_Charts.git
+    source:
+      repoURL: https://github.com/Janemils/Helm_Charts.git
       targetRevision: HEAD
       path: charts-voting-res
 
